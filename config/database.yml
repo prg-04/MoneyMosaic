@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: money_mosaic_production
-  username: money_mosaic
-  password: <%= ENV["MONEY_MOSAIC_DATABASE_PASSWORD"] %>
+  username: evans
+  password: "Bossy_0004"
