@@ -1,7 +1,7 @@
 databases:
-  - name: dpg-clq6qtpjvg7s73e3pos0-a
-    databaseName: money_mosaic_jbm3
-    user: money_mosaic_jbm3_user
+  - name: dpg-clq7gk8gqk6s738pu6bg-a
+    databaseName: money_mosaic_ssbb
+    user: money_mosaic_ssbb_user
 
 services:
   - type: web
