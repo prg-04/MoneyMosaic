@@ -1,7 +1,7 @@
 databases:
   - name: Money-Mosaic
-    databaseName: Money-Mosaic
-    user: evans
+    databaseName: money_mosaic_jbm3
+    user: money_mosaic_jbm3_user
 
 services:
   - type: web
