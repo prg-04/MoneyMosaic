@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: money_mosaic_production
-  username: evans
-  password: "Bossy_0004"
+  url: <%= ENV["DATABASE_URL"] %>
+  database: money_mosaic_jbm3
+  username: money_mosaic_jbm3_user
+  password: TDn4slOv35tQGpcMqdCITdUE6qHUDCju
