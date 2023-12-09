@@ -6,7 +6,7 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.enable_reloading = false
 
-  config.secret_key_base = Rails.application.credentials.secret_key_base
+  cconfig.secret_key_base = Rails.application.credentials.production[:secret_key_base]
 
 
 
