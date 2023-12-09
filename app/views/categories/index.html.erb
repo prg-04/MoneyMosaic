@@ -6,8 +6,8 @@
       <ul class="list-unstyled">
         <li class="card mb-3">
           <%= link_to category_path(category), class: "flex-row text-decoration-none text-dark" do %>
-            <div class="cat-container">
-              <div class="cat-info">
+            <div class=" w-100">
+              <div class="d-flex justify-content-between mt-2">
                 <h3><%= category.name %></h3>
                 <h3>$<%= category.expenses.sum(:amount) %></h3>
               </div>
