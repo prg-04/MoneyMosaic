@@ -67,7 +67,7 @@
 
  - [Live Demo Link](https://money-mosaic.onrender.com)
 
- - [Presentation Loom Video]()
+ - [Presentation Loom Video](https://www.loom.com/share/363129256c16483ca8751cc3713418dc?sid=d7cdef84-b3b4-4a22-904f-12e8b4d20f5a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
