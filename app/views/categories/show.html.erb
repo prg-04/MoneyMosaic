@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="expense">
+<div class="expense d-flex flex-column">
   <% @expenses.each do |expense| %>
     <ul class="list-unstyled mb-3">
       <li class="card mb-3">
@@ -30,9 +30,11 @@
       </li>
     </ul>
   <% end %>
-  <div class="mb-3">
+  <div class="d-flex bg-success w-100 justify-content-center position-absolute bottom-0 align-self-center p-2" role="alert">
+    <div class="mb-3 border rounded">
     <%= link_to new_category_expense_path(category_id: @category.id), class: "btn btn-success" do %>
       Add New Expense
     <% end %>
+  </div>
   </div>
 </div>
