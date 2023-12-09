@@ -82,5 +82,6 @@ test:
 production:
   <<: *default
   url: "postgres://money_mosaic_ulun_user:eHdNDBdD3UXKwW7fBHckO9kEqlxxTxlv@dpg-clq8brae9h4c73ajk3hg-a/money_mosaic_ulun"
-  database: money_mosaic_jbm3
-  username: money_mosaic_jbm3_user
+  database: money_mosaic_ulun
+  username: money_mosaic_ulun_user
+
