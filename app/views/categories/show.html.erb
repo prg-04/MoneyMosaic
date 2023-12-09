@@ -1,0 +1,40 @@
+<%= render partial: 'layouts/shared/header', locals: { heading: 'TRANSACTIONS', path: category_path(@category) } %>
+
+<div class="card mb-3 w-100">
+  <div class="py-4 d-flex justify-content-between">
+    <h3 class="card-title"><%= @category.name %></h3>
+    <h3 class="card-text">$<%= @expenses.sum(:amount) %></h3>
+  </div>
+</div>
+
+<div class="expense d-flex flex-column">
+  <% @expenses.each do |expense| %>
+    <ul class="list-unstyled mb-3">
+      <li class="card mb-3">
+        <div class="d-flex align-items-center">
+          <div class="ml-1">
+            <% if @category.icon.attached? %>
+              <%= image_tag(@category.icon, class: 'img-fluid rounded-circle', style: 'width: 50px; height: 50px;') %>
+            <% else %>
+              <%= image_tag('group.png', class: 'img-fluid rounded-circle', style: 'width: 50px; height: 50px;') %>
+            <% end %>
+          </div>
+          <div class="w-100 px-2 mt-3">
+            <div class="d-flex justify-content-between">
+              <h3><%= expense.name %></h3>
+              <h3>$<%= expense.amount %></h3>
+            </div>
+            <p><%= expense.created_at.strftime("%d-%m-%Y") %></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  <% end %>
+  <div class="d-flex bg-success w-100 justify-content-center position-absolute bottom-0 align-self-center p-2" role="alert">
+    <div class="mb-3 border rounded">
+    <%= link_to new_category_expense_path(category_id: @category.id), class: "btn btn-success" do %>
+      Add New Expense
+    <% end %>
+  </div>
+  </div>
+</div>
