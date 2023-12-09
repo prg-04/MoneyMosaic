@@ -1,11 +1,11 @@
 databases:
-  - name: dpg-clq6qtpjvg7s73e3pos0-a
-    databaseName: money_mosaic_jbm3
-    user: money_mosaic_jbm3_user
+  - name: Money-Mosaic
+    databaseName: Money-Mosaic
+    user: evans
 
 services:
   - type: web
-    name: Money Mosaic
+    name: Money-Mosaic
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
