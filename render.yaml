@@ -1,14 +1,14 @@
 databases:
-  - name: Money-Mosaic
+  - name: MoneyMosaic
     databaseName: money_mosaic_jbm3
     user: money_mosaic_jbm3_user
 
 services:
   - type: web
-    name: Money-Mosaic
+    name: MoneyMosaic
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    startCommand: bundle exec rails s
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -16,3 +16,8 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
+  - type: redis
+    name: redis
+    plan: free
+    ipAllowList: []
+    maxmemorypolicy: noeviction      
