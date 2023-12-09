@@ -31,7 +31,7 @@
 
 *Money Mosaic* your Ruby on Rails budget ally. Securely register, manage transactions in dedicated categories for clear spending insights. Track and visualize expenditures, streamlining budget management. Empower informed decisions with Money Mosaic's intuitive platform. Thrive financially.
 
-<img src="./app/assets/images/schema.png" alt="UML class diagram"/>
+<img src="./public/erd_diagram.png" alt="UML class diagram"/>
 
 ## 🛠 Built With <a name="built-with"></a>
 
