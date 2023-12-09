@@ -161,7 +161,9 @@ If you like this project, please give it a star ⭐.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> The original design idea for this web page was created by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+<p  align="left"> We extend deep thanks to Gregoire Vella for the remarkable design concept showcased on Behance. Our project pays homage to this inspiration, embraced within the Creative Commons license, illuminating our creative journey.</p>
+
+- The original design idea for this web page was created by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
