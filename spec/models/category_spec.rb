@@ -11,6 +11,6 @@ RSpec.describe Category, type: :model do
   it 'should not save category without icon' do
     category = Category.new(name: 'Test Category')
     expect(category.save).to be_falsey
-    expect(category.errors[:icon]).to include("can't be blank") # Replace ':icon' with the actual attribute name if different
+    expect(category.errors[:icon]).to include("can't be blank")
   end
 end

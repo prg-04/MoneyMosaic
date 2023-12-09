@@ -6,9 +6,7 @@ class ExpensesController < ApplicationController
   end
 
   def create
-    unless @category.user == current_user
-      return redirect_to categories_path, notice: 'You can only create expenses from your categories'
-    end
+    return redirect_to categories_path, notice: 'You can only create expenses from your categories' unless @category.user == current_user
 
     @expense = @category.expenses.new(expense_params)
     @expense.user = current_user
